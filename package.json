@@ -1,0 +1,40 @@
+{
+    "name": "puppeteer-multi-browser",
+    "version": "1.0.0",
+    "description": "Boilerplate code for using Puppeteer with multiple browsers",
+    "main": "index.js",
+    "scripts": {
+        "test:chrome:dev": "mocha util/bootstrap.js --recursive tests --br=chrome --env=dev --timeout 20000",
+        "test:firefox:dev": "mocha util/bootstrap.js --recursive tests --br=firefox --env=dev --timeout 20000",
+        "test:edge:dev": "mocha util/bootstrap.js --recursive tests --br=edge --env=dev --timeout 20000",
+        "test:chrome:int": "mocha util/bootstrap.js --recursive tests --br=chrome --env=int --timeout 20000",
+        "test:firefox:int": "mocha util/bootstrap.js --recursive tests --br=firefox --env=int --timeout 20000",
+        "test:edge:int": "mocha util/bootstrap.js --recursive tests --br=edge --env=int --timeout 20000"
+    },
+    "author": "Prasad",
+    "license": "ISC",
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "config": "^3.2.4",
+        "minimist": "^1.2.0",
+        "mocha": "^6.2.2",
+        "puppeteer": "^2.0.0",
+        "puppeteer-firefox": "^0.5.0",
+        "lodash": "^4.17.15"
+    },
+    "directories": {
+        "test": "tests"
+    },
+    "dependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/prasadmudedla/puppeteer-multi-browser.git"
+    },
+    "keywords": [
+        "puppeteer"
+    ],
+    "bugs": {
+        "url": "https://github.com/prasadmudedla/puppeteer-multi-browser/issues"
+    },
+    "homepage": "https://github.com/prasadmudedla/puppeteer-multi-browser#readme"
+}

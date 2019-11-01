@@ -1,0 +1,9 @@
+{
+    "int": {
+        "baseUrl": "http://the-internet.herokuapp.com/?int"
+    },
+
+    "dev": {
+        "baseUrl": "http://the-internet.herokuapp.com/?dev"
+    }
+}
