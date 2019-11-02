@@ -5,7 +5,6 @@ describe('sample test', function () {
         page = await browser.newPage();
         await page.setDefaultNavigationTimeout(10000);
         await page.goto(params.baseUrl, { waitUntil: 'domcontentloaded'});
-        console.log(params);
     });
 
     after(async function () {

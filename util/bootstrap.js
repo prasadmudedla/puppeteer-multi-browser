@@ -3,8 +3,6 @@ const puppeteer_ff = require('puppeteer-firefox');
 const { expect } = require('chai');
 const config = require('config');
 const minimist = require('minimist');
-const _ = require('lodash');
-const globalVariables = _.pick(global, ['browser', 'expect', 'params']);
 
 // puppeteer options
 const ff_opts = {
@@ -54,7 +52,4 @@ before(async function () {
 // close browser and reset global variables
 after(async function () {
     await browser.close();
-    global.browser = globalVariables.browser;
-    global.expect = globalVariables.expect;
-    global.params = globalVariables.params;
 });
